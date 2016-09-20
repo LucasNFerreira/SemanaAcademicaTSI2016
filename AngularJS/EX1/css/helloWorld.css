@@ -1,0 +1,8 @@
+body{
+    background-color: #eee;
+    text-align: center;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak],[x-ng-cloak], .ng-cloak, .x-ngcloak{
+    display: none !important;
+}

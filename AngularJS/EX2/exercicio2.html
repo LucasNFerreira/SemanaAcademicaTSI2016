@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="meuPrimeiroApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Minicurso AngularJS</title>
+
+        <link rel="stylesheet" href="css/normalize.css" charset="utf-8">
+        <link rel="stylesheet" href="css/exercicio2.css" charset="utf-8">
+
+    </head>
+    <body ng-controller="primeiroCtrl" ng-cloak> <!-- data-ng-cloak class="ng-cloak"-->
+
+        <h1>{{msg}}</h1>
+        <label for="input">Busca: </label>
+        <input id="input" type="text" ng-model="termo"></input>
+        <br/>
+        <span>{{termo}}</span>
+
+        <list-directive></list-directive>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+        </script>
+        <script src="js/exercicio2.js"></script>
+    </body>
+</html>
