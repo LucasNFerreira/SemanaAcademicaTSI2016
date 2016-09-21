@@ -1,0 +1,10 @@
+<md-list flex>
+    <md-list-item class="md-3-line" ng-repeat="follower in followers | filter:{login: termo } | orderBy: 'login'">
+        <img ng-src="{{follower.avatar_url}}" class="md-avatar" alt="{{follower.login}}" />
+        <div class="md-list-item-text" layout="column">
+            <h3>{{ follower.login }}</h3>
+            <h4><a href="{{ follower.html_url }}">{{ follower.html_url }}</a></h4>
+        </div>
+    </md-list-item>
+    <md-divider ></md-divider>
+</md-list>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="meuPrimeiroApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Minicurso AngularJS</title>
+
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+        <base href="/">
+
+    </head>
+    <body ng-controller="primeiroCtrl" ng-cloak> <!-- data-ng-cloak class="ng-cloak"-->
+        <md-content>
+            <md-tabs md-dynamic-height md-border-bottom>
+                <md-tab label="Repositorios" md-on-select="clickRepos()">
+                    <md-content class="md-padding">
+                        <div ng-View></div>
+                    </md-content>
+                </md-tab>
+                <md-tab label="Seguidores" md-on-select="clickSeguidores()">
+                    <md-content class="md-padding">
+                        <div ng-View></div>
+                    </md-content>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+        <script src="js/exercicio2.js"></script>
+    </body>
+</html>
