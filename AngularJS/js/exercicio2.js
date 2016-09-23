@@ -71,7 +71,7 @@ app.controller("reposCtrl", function($scope, $http, FacRepos){
 app.controller("seguidoresCtrl", function($scope, $http, FacFollowers){
     $scope.followers = [];
     var followersGithub = FacFollowers(
-    "https://api.github.com/users/mateus/followers?client_id=8535bac83251149ac427&client_secret=0e7a3f067fb90c1a2f45c2e771dff96bed954989",
+    "https://api.github.com/users/arthurassuncao/followers?client_id=8535bac83251149ac427&client_secret=0e7a3f067fb90c1a2f45c2e771dff96bed954989",
     $scope);
     followersGithub.get();
 });
